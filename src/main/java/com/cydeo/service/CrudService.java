@@ -14,4 +14,6 @@ public interface CrudService <T,ID> {
     List<T> findAll();  // List<UserDTO> findAll();
 
     void deleteById(ID username); //void deleteById(String username);
+
+    void update(T object);
 }
