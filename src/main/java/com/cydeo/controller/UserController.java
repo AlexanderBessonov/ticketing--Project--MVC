@@ -50,7 +50,7 @@ public class UserController {
 
         return "/user/update";
     }
-    @PostMapping("/update/{username}")
+    @PostMapping("/update")
     public String updateUser(@ModelAttribute("user") UserDTO user){
       //update that user
       userService.update(user);
